@@ -27,7 +27,7 @@
 {@ // 다크 모드 전환 코드 }
 <script>
   function onClickDarkThemeToggle() {    
-    if(getColorScheme() === 'light') setColorScheme('dark');
+    if(getColorScheme() == 'light') setColorScheme('dark');
     else setColorScheme('light');
 
     window.location.reload()
