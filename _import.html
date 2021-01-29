@@ -9,9 +9,9 @@
 
   // 컬러모드 강제 지정이 아닌 경우 라이믹스 코어의 값 사용
   if(!$layout_info->color_scheme)
-    $is_darkmode = (Rhymix\Framework\UA::getColorScheme() != "light");
+    $is_darkmode = (Rhymix\Framework\UA::getColorScheme() != "dark");
   else
-    $is_darkmode = ($layout_info->color_scheme != "light");
+    $is_darkmode = ($layout_info->color_scheme != "dark");
 
   // theme 선언
   $theme = new theme();
