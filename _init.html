@@ -26,8 +26,9 @@
 
 {@ // 다크 모드 전환 코드 }
 <script>
-  function onClickDarkThemeToggle() {    
-    if($.cookie('rx_color_scheme') == 'light') setColorScheme('dark');
+  function onClickDarkThemeToggle() {
+    const color_scheme = $.cookie('rx_color_scheme') ? $.cookie('rx_color_scheme') : "light";
+    if(color_scheme == 'light') setColorScheme('dark');
     else setColorScheme('light');
 
     window.location.reload()
